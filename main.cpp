@@ -28,12 +28,7 @@ using namespace std;
 
 int main()
 {
-    DirectedGraph dg=createRandomDAGIter(1000);
-    //dg.addNode(5);
-    //dg.addNode(6);
-    //dg.addDirectedEdge(dg.getNode(6),dg.getNode(5));
-    //dg.displayNodes();
-    Kahns(dg);
-    mDFS(dg);
+    Kahns(createRandomDAGIter(1000));
+    mDFS(createRandomDAGIter(1000));
     return 0;
 }
